@@ -31,18 +31,18 @@ function Bienvenida() {
   return (
     <section id="center">
       <div className="hero-museo">
+        <div className="hero-text">
+          <h1 className="hero-title">¡Bienvenido al museo de Matilda!</h1>
+          <p className="hero-sub">
+            Un lugar donde las arrugas son historia y cada ronquido es una obra
+            de arte.
+          </p>
+        </div>
         <div className="polaroid">
+          <span className="tape" />
           <img src={matiHero} alt="Matilda posando para la foto" />
         </div>
-        <div className="title-wrap">
-          <h1 className="hero-title">¡Bienvenido al museo de Matilda!</h1>
-          <span className="tape tape-title" />
-        </div>
       </div>
-      <p className="hero-sub">
-        Un lugar donde las arrugas son historia y cada ronquido es una obra de
-        arte.
-      </p>
     </section>
   )
 }

@@ -11,10 +11,17 @@
 
 .hero-museo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 8px;
-  margin: 18px 0 10px;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 400px;
 }
 
 .polaroid {
@@ -23,7 +30,8 @@
   padding: 14px 14px 34px;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(63, 48, 38, 0.18);
-  transform: rotate(-4deg);
+  transform: rotate(3deg);
+  flex-shrink: 0;
 }
 
 .polaroid img {
@@ -32,35 +40,39 @@
   border-radius: 2px;
 }
 
-.title-wrap {
-  position: relative;
-  display: inline-block;
-  padding: 0 16px;
-}
-
-.tape-title {
+.tape {
   position: absolute;
-  top: -8px;
-  right: -14px;
-  width: 62px;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 70px;
   height: 26px;
-  background: var(--fawn-dark);
-  opacity: 0.6;
-  transform: rotate(9deg);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--tape);
+  opacity: 0.85;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .hero-title {
   color: var(--brown);
-  font-size: 46px;
-  margin: 8px 0 0;
+  font-size: 44px;
+  margin: 0;
 }
 
 .hero-sub {
   font-size: 20px;
   color: var(--ink);
-  max-width: 460px;
-  margin: 0 auto 6px;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 640px) {
+  .hero-museo {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
 }
 
 /* --- Galería de Matilda --- */
