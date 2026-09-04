@@ -50,19 +50,27 @@
   margin: 0 auto 6px;
 }
 
-/* --- Galería de pugs --- */
+/* --- Galería de Matilda --- */
+.gallery-eyebrow {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--brown);
+  margin: 34px 0 0;
+}
+
 .pug-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 26px;
-  margin: 30px 0 8px;
+  margin: 22px 0 8px;
 }
 
 .pug-card {
   background: #fff;
   border-radius: 16px;
   border: 2px solid var(--fawn-dark);
-  padding: 20px 16px 24px;
+  padding: 16px 16px 24px;
   box-shadow: 0 8px 16px rgba(63, 48, 38, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -77,36 +85,33 @@
 .pug-card:nth-child(3) { transform: rotate(-2deg); }
 .pug-card:nth-child(4) { transform: rotate(3deg); }
 
-.pug-emoji {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 62px;
-  background: var(--fawn);
-  border-radius: 50%;
-  border: 3px dashed var(--fawn-dark);
-  box-shadow: inset 0 0 0 3px #fff;
+.pug-photo-frame {
+  margin: 0 auto 12px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  outline: 3px solid var(--fawn-dark);
+  box-shadow: 0 8px 16px rgba(63, 48, 38, 0.15);
+}
+
+.pug-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .pug-name {
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   color: var(--brown);
-  margin: 4px 0 6px;
+  margin: 4px 0 0;
 }
 
-.pug-fact {
-  font-size: 16px;
-  color: var(--ink);
-  line-height: 145%;
-  margin: 0;
-}
-
-/* --- Banner / stickers --- */
+/* --- Banner / museo --- */
 .sticker-card {
   margin: 40px auto 0;
   max-width: 640px;
@@ -115,30 +120,6 @@
   border-radius: 22px;
   padding: 28px 20px;
 }
-
-.sticker-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.sticker {
-  width: 54px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 26px;
-  box-shadow: 0 4px 10px rgba(63, 48, 38, 0.12);
-}
-
-.sticker:nth-child(1) { background: var(--fawn); transform: rotate(-6deg); }
-.sticker:nth-child(2) { background: var(--tongue); transform: rotate(4deg); }
-.sticker:nth-child(3) { background: var(--fawn-dark); transform: rotate(-3deg); }
-.sticker:nth-child(4) { background: var(--fawn); transform: rotate(5deg); }
 
 /* --- Footer --- */
 .app-footer {
