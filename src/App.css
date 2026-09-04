@@ -9,6 +9,14 @@
   padding: 10px 0 30px;
 }
 
+.hero-museo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 10px;
+}
+
 .polaroid {
   position: relative;
   background: #fff;
@@ -16,7 +24,6 @@
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(63, 48, 38, 0.18);
   transform: rotate(-4deg);
-  margin: 18px 0 10px;
 }
 
 .polaroid img {
@@ -25,16 +32,22 @@
   border-radius: 2px;
 }
 
-.tape {
+.title-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.tape-title {
   position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-3deg);
-  width: 70px;
+  top: -8px;
+  right: -14px;
+  width: 62px;
   height: 26px;
-  background: var(--tape);
-  opacity: 0.85;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background: var(--fawn-dark);
+  opacity: 0.6;
+  transform: rotate(9deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-title {
