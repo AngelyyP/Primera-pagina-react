@@ -2,7 +2,6 @@ import matiHero from './assets/Mati.jpeg'
 import mati1 from './assets/Mati1.jpeg'
 import mati2 from './assets/Mati2.jpeg'
 import mati3 from './assets/Mati3.jpeg'
-import mati4 from './assets/Mati4.jpeg'
 import Banner from './Components/Banner'
 import PugCard from './Components/PugCard'
 import Footer from './Components/Footer'
@@ -11,20 +10,17 @@ import './App.css'
 const obras = [
   {
     image: mati1,
-    title: 'La mirada que lo sabe todo',
+    title: 'La sonrisa más linda',
   },
   {
     image: mati2,
-    title: 'Sueño eterno en la sala dos',
+    title: 'Sueño despues del pollito',
   },
   {
     image: mati3,
-    title: 'La hora de la cena (siempre)',
+    title: 'Con mi hermanita que más amo',
   },
-  {
-    image: mati4,
-    title: 'La modelo del museo',
-  },
+
 ]
 
 function Bienvenida() {

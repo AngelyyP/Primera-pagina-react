@@ -21,7 +21,7 @@
 
 .hero-text {
   text-align: left;
-  max-width: 400px;
+  max-width: 440px;
 }
 
 .polaroid {
@@ -30,21 +30,21 @@
   padding: 14px 14px 34px;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(63, 48, 38, 0.18);
-  transform: rotate(3deg);
+  transform: rotate(-5deg);
   flex-shrink: 0;
 }
 
 .polaroid img {
   display: block;
-  width: 230px;
+  width: 205px;
   border-radius: 2px;
 }
 
 .tape {
   position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-3deg);
+  top: -16px;
+  left: 38%;
+  transform: translateX(-50%) rotate(-6deg);
   width: 70px;
   height: 26px;
   background: var(--tape);
@@ -55,6 +55,7 @@
 .hero-title {
   color: var(--brown);
   font-size: 44px;
+  line-height: 1.2;
   margin: 0;
 }
 
@@ -75,12 +76,18 @@
   }
 }
 
-/* --- Galería de Matilda --- */
+/* --- Galeria --- */
 .gallery-eyebrow {
+  display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--brown);
+  color: #fff;
+  background: var(--fawn-dark);
+  padding: 6px 16px;
+  border-radius: 3px;
+  transform: rotate(-2deg);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   margin: 34px 0 0;
 }
 
@@ -92,6 +99,7 @@
 }
 
 .pug-card {
+  position: relative;
   background: #fff;
   border-radius: 16px;
   border: 2px solid var(--fawn-dark);
@@ -100,15 +108,28 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.pug-card::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 20px;
+  background: var(--fawn-dark);
+  opacity: 0.7;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
 .pug-card:hover {
   transform: translateY(-6px) rotate(0deg);
   box-shadow: 0 14px 24px rgba(63, 48, 38, 0.2);
 }
 
-.pug-card:nth-child(1) { transform: rotate(-3deg); }
-.pug-card:nth-child(2) { transform: rotate(2deg); }
-.pug-card:nth-child(3) { transform: rotate(-2deg); }
-.pug-card:nth-child(4) { transform: rotate(3deg); }
+.pug-card:nth-child(1) { transform: rotate(-4deg); }
+.pug-card:nth-child(2) { transform: rotate(3deg); }
+.pug-card:nth-child(3) { transform: rotate(-3deg); }
 
 .pug-photo-frame {
   margin: 0 auto 12px;
@@ -138,12 +159,28 @@
 
 /* --- Banner / museo --- */
 .sticker-card {
+  position: relative;
   margin: 40px auto 0;
   max-width: 640px;
   background: #fff;
   border: 2px dashed var(--fawn-dark);
   border-radius: 22px;
   padding: 28px 20px;
+  transform: rotate(-1.5deg);
+}
+
+.sticker-card::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 34px;
+  width: 60px;
+  height: 20px;
+  background: var(--fawn-dark);
+  opacity: 0.7;
+  transform: rotate(-8deg);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* --- Footer --- */
