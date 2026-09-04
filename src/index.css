@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;700&display=swap');
+
+:root {
+  --cream: #fdf5e9;
+  --ink: #3f3026;
+  --brown: #6b4f3a;
+  --fawn: #efc9a6;
+  --fawn-dark: #d9a879;
+  --tongue: #f29bb0;
+  --nose: #2e2a26;
+  --tape: #f7e6c5;
+
+  font: 18px/145% 'Quicksand', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  background-image: radial-gradient(var(--fawn) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  color: var(--brown);
+}
+
+h1 {
+  font-size: 64px;
+  margin: 12px 0 4px;
+  @media (max-width: 1024px) {
+    font-size: 46px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
