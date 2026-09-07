@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* --- Sección hero (estilo polaroid) --- */
+/* --- polaroid --- */
 #center {
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@
   }
 }
 
-/* --- Galeria --- */
+/* --- fotos --- */
 .gallery-eyebrow {
   font-size: 14px;
   text-transform: uppercase;
@@ -151,12 +151,12 @@
   margin: 4px 0 0;
 }
 
-/* --- Banner / museo --- */
+/* --- Info --- */
 .sticker-card {
   position: relative;
   margin: 40px auto 0;
   max-width: 640px;
-  background: #fff;
+  background: #fffcfc;
   border-radius: 22px;
   padding: 28px 20px;
   transform: rotate(-1.5deg);
@@ -181,4 +181,29 @@
   margin-top: 40px;
   font-size: 15px;
   color: var(--brown);
+}
+
+.footer-divider {
+  border: none;
+  border-top: 2px dashed var(--fawn-dark);
+  margin: 0 0 18px;
+}
+
+.footer-brand {
+  font-family: 'Caveat', cursive;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--fucsia);
+  margin: 0;
+}
+
+.footer-phrase {
+  margin: 6px 0 0;
+}
+
+.footer-year {
+  font-size: 13px;
+  color: var(--brown);
+  opacity: 0.7;
+  margin: 4px 0 0;
 }
